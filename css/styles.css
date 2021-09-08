@@ -1,0 +1,73 @@
+*,::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0,0,0, .8);
+    color: wheat;
+    font-size: 62.5%;
+}
+.container {
+    height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+}
+.container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.formulario-datos {
+    display: block;
+    width: 40%;
+    margin:auto;
+}
+.formulario-datos input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: rgb(245, 230, 202);
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+.formulario-datos input:hover {
+    background-color: rgb(241, 194, 105);
+}
+.btn-agregar-tarea{
+    width: 150px;
+    display: block;
+    margin: 10px auto 10px auto;
+    background-color: wheat;  
+    padding: 5px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-agregar-tarea:hover {
+    background-color: rgb(241, 194, 105);
+}
+.listado-tareas {
+    display: flex;
+    flex-direction: column;
+}
+.listado-tareas .tarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 2rem;
+}
+.listado-tareas .tarea .material-icons {
+    color: rgb(173, 1, 1);
+    cursor: pointer;
+}
+.listado-tareas .tarea .material-icons:hover {
+    color: rgb(102, 0, 0);
+}
+
